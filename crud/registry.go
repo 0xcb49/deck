@@ -1,6 +1,8 @@
 package crud
 
 import "github.com/pkg/errors"
+import "github.com/golang/glog"
+import "encoding/json"
 
 // Kind represents Kind of an entity or object.
 type Kind string
@@ -99,6 +101,8 @@ func (r *Registry) Do(kind Kind, op Op, args ...Arg) (Arg, error) {
 
 	var res Arg
 
+        t, _ := json.Marshal(op)
+        glog.Infof("Kong operation: %s", t)
 	switch op.name {
 	case Create.name:
 		res, err = a.Create(args...)
