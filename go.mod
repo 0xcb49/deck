@@ -6,7 +6,7 @@ require (
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/hashicorp/go-immutable-radix v1.1.0 // indirect
 	github.com/hashicorp/go-memdb v0.0.0-20181108192425-032f93b25bec
-	github.com/hbagdi/deck v0.5.2
+	github.com/hbagdi/deck v0.5.2 // indirect
 	github.com/hbagdi/go-kong v0.9.0
 	github.com/imdario/mergo v0.3.7
 	github.com/mattn/go-colorable v0.1.4 // indirect
