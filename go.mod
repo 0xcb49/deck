@@ -3,6 +3,7 @@ module github.com/hbagdi/deck
 require (
 	github.com/BurntSushi/toml v0.3.1 // indirect
 	github.com/fatih/color v1.7.0
+	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/hashicorp/go-immutable-radix v1.0.0 // indirect
 	github.com/hashicorp/go-memdb v0.0.0-20181108192425-032f93b25bec
 	github.com/hbagdi/go-kong v0.5.0
@@ -29,3 +30,5 @@ require (
 	golang.org/x/sys v0.0.0-20190405154228-4b34438f7a67 // indirect
 	gopkg.in/yaml.v2 v2.2.2
 )
+
+go 1.13
