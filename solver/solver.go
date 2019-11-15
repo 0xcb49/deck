@@ -23,7 +23,7 @@ func Solve(doneCh chan struct{}, syncer *diff.Syncer,
 		return append([]error{}, errors.Wrapf(err, "cannot build registry"))
 	}
 
-	return syncer.Run(doneCh, 10, func(e diff.Event) (crud.Arg, error) {
+	return syncer.Run(doneCh, 1, func(e diff.Event) (crud.Arg, error) {
 		return r.Do(e.Kind, e.Op, e)
 	})
 }
